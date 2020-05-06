@@ -1,4 +1,6 @@
 
+*.so 
+*.pyc 
 *.sublime-workspace 
 *.sublime-project 
 
