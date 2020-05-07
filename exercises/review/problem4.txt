@@ -1,0 +1,15 @@
+
+Challenge Problem: A recursive sum 
+
+a) Write a function which uses recursion to find the sum of an array of 
+numbers. Bonus: raise a TypeError if the array is not a list, tuple, or 
+numpy array, or if it contains a non-numerical value, and write a docstring 
+for the function. 
+
+Hint: to check for non-numerical values, use the isinstance built-in function 
+and numbers.Number with an "import numbers" statement. The type name of the 
+numpy array is numpy.ndarray, *not* numpy.array. 
+
+b) Verify your solution to part (b) by generating the first 50 triangle 
+numbers. These are 1, 1 + 2, 1 + 2 + 3, 1 + 2 + 3 + 4, and so on. The first 
+and last numbers printed should be 1 and 1275. 

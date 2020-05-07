@@ -1,0 +1,25 @@
+
+Moderate Problem: A prime number generator 
+
+This problem also serves as an exercise in production-level code; as such, 
+correct answers will have robust error-handling and docstrings on the two 
+functions you will write. 
+
+a) Write a function which determines if an integer is a prime number. Raise a 
+ValueError if the integer is non-positive, and a TypeError if the number 
+received was not an integer. This can be checked with "isinstance(x, int)". 
+Write a docstring for this function. 
+
+b) Write a function which prints a give number of prime numbers, starting with 
+2, and getting larger from there. Raise a ValueError if the number received as 
+an argument is not positive, and a TypeError if it is not an integer. Write a 
+docstring for this function. 
+
+c) Take in the number of prime numbers to generate as a command-line argument, 
+and pass it to the function you wrote for part (b). To access a command-line 
+argument, import the module "sys" and it can be found at "sys.argv[1]". This 
+will always be a string, so you'll need to type-cast it to an integer. 
+
+Now generate the first 50 prime numbers from the command line. The last number 
+printed should be 229. Run your code with a negative number as a command line 
+argument and make sure that it raises the ValueError you wrote in part (b). 

@@ -1,0 +1,13 @@
+
+Simple Problem: File I/O with randomly generated numbers. 
+
+a) Write a program which pseudo-randomly generates 10,000 numbers according to 
+a Gaussian distribution with standard deviation of 1 (hint: you can use 
+numpy.random.normal to do exactly this). Write these to an output file, with 
+each number on its own line. 
+
+b) Write a program which reads in the file you wrote in part (a). Use 
+numpy.std to check that the standard deviation is reasonably close to 1. 
+
+
+Brownie points go to those who write their file I/O code without using numpy. 

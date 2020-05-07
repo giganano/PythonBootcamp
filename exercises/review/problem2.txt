@@ -1,0 +1,12 @@
+
+Simple Problem: File I/O with simple conditionals 
+
+a) Write a program which records in an output file the numbers 1 through 
+10,000, the square of each number, and if it is odd, its cube as well. Use a 
+while loop to do this, and do not use numpy.savetxt. 
+
+b) Write a program which reads in the file you generated in part (a) and store 
+the output in a 2-D list. You will not be able to use numpy.genfromtxt for 
+this problem because the file is not square (hint: you will probably want to 
+make use of the "split" function for strings). Print the first 20 elements of 
+the 2-D list to make sure everything came out right. 

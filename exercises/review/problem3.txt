@@ -1,0 +1,19 @@
+
+Moderate Problem: Basic Recursion 
+
+Recursive functions are functions that call themselves. Developers talk about 
+two cases when it comes to recursive functions - the base case and the 
+recursive case. The base case is the one which does not call the function, and 
+instead returns some value. The recursive case returns a line which calls the 
+function itself, and this continues until the base case is reached, and a 
+value can be returned. 
+
+a) A simple yet classic example of recursion is a factorial function. Recall 
+that this is defined by 0! = 1 and n! = n(n - 1)!. Write a function which uses 
+recursion to calculate n! for a given value of n. Bonus: raise a ValueError if 
+n is negative, and write a docstring for this function. 
+
+b) Use your function from part a to print the factorial of the numbers 1 
+through 50, and use string formatters to place the integers in the print 
+statement. 
+

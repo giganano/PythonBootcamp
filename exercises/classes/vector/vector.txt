@@ -1,0 +1,48 @@
+
+Challenge Problem: A vector object from scratch 
+
+This is an exercise in magic methods. The goal is to write an object which 
+implements the functions of an arbitrary vector. A correct solution should 
+have all of the following: 
+
+- 	A property 'vector' which returns the vector itself as a list 
+
+- 	A property 'dimension' which returns the number of elements in the vector 
+
+- 	The ability to use the len() function on the vector to determine its 
+	dimensionality, in addition to the property mentioned above 
+
+- 	Indexing with square brackets (e.g. x = vector[0])
+
+- 	Item assignment with square brackets (e.g. vector[0] = 1) 
+
+- 	A string representation with '<' as the first character, each component of 
+	the vector separated by commas, and '>' as the final character 
+
+- 	Respond correctly to all of +, +=, -, -=, *, and *=. Both * and *= should 
+	return the vector cross product. 
+
+- 	A functional attribute 'dot' to evaluate the dot product with another 
+	vector. This should be called via v1.dot(v2) where v1 and v2 are vector 
+	objects. 
+
+- 	Robust error handling in all functions. For example, when you try to add, 
+	subtract, or multiply two vectors of different dimensionality, an error 
+	should be raised which is *not* the auto-generated IndexError with an 
+	"Index out of bounds" message. A TypeError should also be raised when the 
+	user attempts to make a vector out of an array with non-numerical data. 
+
+You may store the vector data internally as either a list or numpy array, but 
+the property 'vector' should always return a list. 
+
+Hint: This problem becomes easier when the vector data is stored as a numpy 
+array under the hood. 
+
+Bonus: Write proper docstrings for your file, the class itself, and all 
+attributes and functions. The vector.setter function is an exception to this 
+in that it does not need a docstring - the docstring on the vector property 
+function fulfills that purpose. These should include parameters, returned 
+values, raised exceptions, brief descriptions, etc. The docstrings of the 
+class and the 'dot' function should both show example code. Having seen some 
+python documentation by now, I advise all of you try your hand at writing 
+some. 
