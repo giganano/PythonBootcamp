@@ -1,0 +1,50 @@
+
+Getting Comfortable with Reading Python Documentation 
+
+This exercise does not have a solution, because it will be obvious to you 
+whether or not you're successful. Your task is the following. 
+
+Launch either ipython or a jupyter notebook (ipython is somewhat easier for 
+this as you don't have to create a save file), and import numpy, scipy, 
+matplotlib, or some other anaconda package that you're familiar with. 
+
+Type the name of the package you imported followed by a period, and then press 
+the tab key. This will bring up a small window listing all of the contents of 
+the package. 
+
+Select one of the options, place a question mark after the name of the 
+function and hit enter (do not put a space after the question mark). This will 
+bring up the docstring for the object you've selected. If the docstring has 
+more lines than your terminal window can fit, you'll need to press Q to exit. 
+Alternatively, you can run "help(name of function)" to view the docstring. 
+
+Not everything you see in the package contents is truly a part of the package; 
+some of it is imported by the package. For example numpy imports the 'sys' and 
+'os' builtin modules, so if you've imported numpy, you'll find these also at 
+'numpy.sys' and 'numpy.os'. 
+
+Continue looking at docstrings until you find a function that you've never 
+used before. Read the description of the function, its parameters, and what it 
+returns. Now call the function several times with some dummy data until you're 
+comfortable with it, and understand its output given your input. 
+
+Repeat this process until you're comfortable reading docstrings. If you've 
+never done matrix algebra in python before, then numpy's linear algebra 
+library is probably a good place to look for functions you haven't used. This 
+can be found at 'numpy.linalg' after importing numpy. 
+
+Finally, run a google search for one of the functions you searched. Espeically 
+if you run a search for a function in one of the major anaconda libraries like 
+numpy, scipy, or matplotlib, the function you searched will probably the top 
+result. Click on it to view the HTML documentation; it is the same as the 
+docstring you saw, because it is generated from the docstring. 
+
+When reading python documentation, the same information as the HTML 
+documentation can be found in the docstrings. This may be particularly useful 
+if you don't have internet access. 
+
+The following is a link to my personal favorite comprehensive reference on 
+reStructuredText: https://docutils.sourceforge.io/docs/user/rst/quickref.html 
+
+Should you write any restructured text, an easy RST interpreter is restview, 
+installable via pip: https://pypi.org/project/restview/ 

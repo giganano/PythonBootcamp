@@ -1,0 +1,23 @@
+
+Moderate Problem: A Fibonacci Generator 
+
+The Fibonacci Sequence is a sequence of numbers in which the n'th element is 
+the sum of the two prior elements, with the first two being 0 and 1. 
+
+a) Write a function which generates the first N elements of the Fibonacci 
+Sequence. Correct solutions will accept the value of N as a parameter, will 
+raise a TypeError if N is not an integer, and a ValueError if it is less than 
+2, and will return the Fibonacci Sequence as either a list or numpy array. 
+
+b) Write a new function which prints the list returned from the function you 
+wrote in part (a) with each number separated by a space. Hint: This can be 
+done by using sys.stdout.write in place of the print function, which does not 
+print on a new line with each call to the function. 
+
+Bonus: This print format can also be achieved in one line by passing the 
+list returned from your function part(a) to the print function and adding only 
+one extra character. 
+
+c) Expand your script to accept the number of elements of the Fibonacci 
+Sequence as a command line argument. Use this to print the first 20 elements 
+of the Fibonacci Sequence. The last number printed should be 4181. 

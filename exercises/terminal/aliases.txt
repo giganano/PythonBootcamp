@@ -1,0 +1,12 @@
+
+Simple Problem: Create an alias 
+
+Modify your bash profile or bash rc to alias a simple command to 'ls'. If 
+you'd like, you can add some extra flags to customize this. 
+
+When you're done, you have a simple command that makes 'ls' a little better, 
+and you may find that you prefer it. For example, the command 'lc' is aliased 
+to 'ls -lha' on all of my computers. 
+
+Note: Don't forget to run 'source ~/.bash_profile' (or 'source ~/.bashrc', 
+depending on which file you choose to modify) after making the modification. 

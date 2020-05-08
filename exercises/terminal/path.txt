@@ -1,0 +1,17 @@
+
+Moderate Problem: Add a directory to your Path 
+
+Modify your bash profile or your bash rc to add a directory to your PATH. When 
+you're done, you'll know if it worked based on whether the command 'echo $PATH' 
+prints the directory you added along with many other directories, separated 
+by colons. 
+
+If you accidentally wipe out the other directories from your path, you can fix 
+this by removing the line you added to your bash profile/rc and restarting 
+your terminal. 
+
+Hint: PATH and PYTHONPATH are just special environment variables. Their 
+assignment proceeds in a similar fashion. 
+
+Note: Don't forget to run 'source ~/.bash_profile' (or 'source ~/.bashrc', 
+depending on which file you choose to modify) after making the modification. 

@@ -1,0 +1,52 @@
+
+Moderate Problem: Completing a Small Python Package 
+
+The provided solutions to problems 3 through 6 from the review are copied here 
+at the following locations: 
+
+pkg/factorial.py 
+pkg/recursive_sum.py 
+pkg/sequences/fibonacci.py 
+pkg/sequences/primes.py 
+
+The majority of the code necessary to make a small python package is already 
+here. However, the package is missing the __init__.py files. As such, if you 
+run "import pkg" in python, the line runs, but pkg does not contain anything. 
+
+Write the following files such that the namespace is created: 
+
+pkg/__init__.py 
+pkg/sequences/__init__.py 
+
+Correct solutions will have the following namespace: 
+
+pkg.factorial
+	- Compute the value of N factorial. 
+pkg.recursive_sum 
+	- Compute the sum of an array using recursion. 
+pkg.sequences.fibonacci 
+	- Print the first N elements of the Fibonacci Sequence. 
+pkg.sequences.primes 
+	- Print the first N prime numbers. 
+
+Note that the functions in pkg.sequences should be the ones which *print* the 
+sequence of numbers, not the ones which generate them. To see how correct 
+solutions perform, launch ipython in this directory and run "import solution". 
+Then "solution.factorial", "solution.recursive_sum", 
+"solution.sequences.fibonacci", and "solution.sequences.primes" will show the 
+desired effect. 
+
+If done properly, this solution requires less than 10 lines of code between 
+both the pkg/__init__.py and pkg/sequences/__init__.py files combined. 
+
+Now run "python solution" in this directory. This calculate the value of 10 
+factorial, the sum of all natural numbers 1 through 50, prints the first 
+20 elements of the fibonacci sequence, and the first 20 prime numbers. 
+Write the pkg/__main__.py file such that "python pkg" produces the same 
+output. This should require less than 10 lines of code, not counting comments 
+or whitespace (the solution/__main__.py file has only seven). 
+
+
+
+Congratulations on making your first python package! 
+
