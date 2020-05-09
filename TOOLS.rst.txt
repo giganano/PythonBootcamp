@@ -47,14 +47,16 @@ __ sublime_
 	Mac OS allows users to revert to a bash default. 
 
 	If you're a Windows user, I recommend upgrading to Windows 10 version 
-	>= 18362.0 if you haven't already, and downloading the `Windows Terminal`__ 
-	from the Microsoft Store. This is an open-source, fully integrated Linux 
-	environment within Windows with a bash command line interpreter; other 
-	terminal utilities in Windows use PowerShell, the DOS-derived command 
-	line with different syntax. Astronomy is dominated by Linux and Mac OS, and 
-	thus also the bash terminal. For these reasons, if you're new to the 
-	command line, I recommand focusing your efforts on learning bash rather 
-	than PowerShell syntax. 
+	>= 18362.0 if you haven't already. Then download the `Windows Terminal`__ 
+	from the Microsoft Store, and `enable Windows Subsystem for Linux (WSL)`__. 
+	This will allow the use of Bash commands within the Windows operating 
+	system; other terminal utilities in Windows use PowerShell, the DOS-derived 
+	command line with different syntax. Astronomy is dominated by Linux and Mac 
+	OS, and thus also the bash terminal. For these reasons, if you're new to 
+	the command line, I recommand focusing your efforts on learning bash rather 
+	than PowerShell syntax. It is not required that you use Bash over 
+	PowerShell, though I do not recommend using PowerShell as an astronomer if 
+	you're new to the terminal. 
 
 	If you're a Mac OS user, I recommend `iTerm2`__ over the built-in terminal 
 	application, because it allows much more customization of the user 
@@ -62,8 +64,10 @@ __ sublime_
 
 __ bash_zsh_ 
 __ windows_terminal_ 
+__ enable_wsl_ 
 __ iterm2_ 
 .. _bash_zsh: https://apple.stackexchange.com/questions/361870/what-are-the-practical-differences-between-bash-and-zsh
 .. _windows_terminal: https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701
+.. _enable_wsl: https://winaero.com/blog/enable-wsl-windows-10-fall-creators-update/
 .. _iterm2: https://www.iterm2.com/index.html 
 
