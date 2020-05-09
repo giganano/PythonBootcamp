@@ -1,0 +1,108 @@
+
+Schedule 
+========
+
+Monday, May 11, 2020
+--------------------
+
+* Basics of the Bash Terminal 
+	- Simple commands 
+	- Aliases 
+	- Environment variables 
+	- PATH and PYTHONPATH: what they are and how to modify them 
+
+* Python as a Programming Language 
+	- Compiled versus interpreted code 
+	- Weak versus strong typing 
+	- Objects and the python data model 
+
+* Exercises 
+	- Setting up a simple alias, environment variable, and PATH modification 
+
+
+
+Wednesday, May 13, 2020 
+-----------------------
+
+* The Basics of Python and Syntax Review 
+	- Built-in types: ``int``, ``float``, ``list``, ``tuple``, ``dict`` 
+	- Lists versus NumPy arrays 
+	- Conditionals: ``if``/``elif``/``else`` 
+	- Loops: ``for`` and ``while`` 
+	- Functions: ``def`` 
+	- Simple file I/O with and without NumPy 
+	- Catching exceptions: ``try``, ``except``, and ``finally`` 
+	- Built-in iteration tools: ``any``, ``all``, ``zip``, ``map``, and 
+	  ``filter`` 
+
+* Exercises 
+	- Simple file I/O with loops and conditions 
+	- Basic recursion 
+	- Sequence generators: prime numbers and the Fibonacci Sequence 
+
+
+
+Friday, May 15, 2020 
+--------------------
+
+* Python Documentation 
+	- reStructureText 
+	- Standard format and contents of python documentation 
+
+* Anaconda 
+	- NumPy, SciPy, and Matplotlib 
+	- Example plotting script line-by-line with documentation 
+
+* Multi-File Python Programs 
+	- Importing code in the same directory 
+	- The ``__init__.py`` file 
+	- The usefulness of your PYTHONPATH 
+
+* Exercises 
+	- Plotting with Matplotlib 
+	- Writing the ``__init__.py`` files for an example python package. 
+
+
+
+Monday, May 18, 2020 
+--------------------
+
+* Object Oriented Programming 
+	- Properties and setter functions 
+	- Class methods and static methods 
+	- Syntactic sugar 
+
+* Exercises 
+	- Mathematical functions and their parameters as objects 
+	- Wrapping a ``list`` to make it an ``array`` 
+
+
+
+Wednesday, May 20, 2020 
+-----------------------
+
+* Object Oriented Programming 
+	- Emulating Numeric Types 
+	- Inheritance and composition 
+
+* Exercises 
+	- Making a dictionary case-insensitive 
+	- A vector from scratch 
+	- A deck of cards 
+	- Pets in python 
+
+
+
+Friday, May 22, 2020 
+--------------------
+
+* Some Basic Principles of Software Engineering 
+	- DRY: Don't Repeat Yourself 
+	- No ifs, ands, or buts 
+
+* Review 
+
+* GitHub (if time permits) 
+	- Version control 
+	- Organization of project code 
+
