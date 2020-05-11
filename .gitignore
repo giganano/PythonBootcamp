@@ -1,6 +1,8 @@
 
 *.so 
 *.pyc 
+*.pdf 
+*.png 
 *.sublime-workspace 
 *.sublime-project 
 
