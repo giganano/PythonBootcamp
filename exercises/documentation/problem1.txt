@@ -1,0 +1,22 @@
+
+Challenge Problem: Plotting Mathematical Functions with Matplotlib 
+
+This is an exercise in traversing matplotlib's documentation, which can be 
+quite confusing if you're relatively new to python or inexperienced in 
+reading documentation. 
+
+Produce a plot of the sine, cosine, and tangent functions in black, red, and 
+blue, respectively, with x-axis limits 0 to 2pi, and y-axis limits -2 to 2. 
+Place a legend in the lower left corner, and remove the gray box bounding the 
+legend (you may need to produce the figure without this modification once to 
+see what its referring to). Use a subplot to do so rather than calling 
+pyplot.plot directly, and label the x- and y-axes simply with "x" and "y". 
+Save the figure as both a PDF and a PNG. 
+
+Hint: To create a subplot, first make a figure by calling pyplot.figure, and 
+then a subplot can be created with fig.add_subplot. The names of some functions 
+change when called for a subplot; for example, plt.xlabel changes to 
+ax.set_label for a subplot ax. For those who haven't created such figures 
+before, a perpetually continuous plot of a function can be made by simply 
+plotting ~1000 points at different x-values. 
+
