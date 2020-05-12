@@ -13,33 +13,50 @@ class exponential:
 
 	r""" 
 	A mathematical exponential growth/decay function given by: 
-		f(x) = normalization * exp(x / scale) 
+		f(x) = normalization * exp(x / rate) 
 
 	Parameters 
 	----------
 	kwargs : real numbers 
-		The attributes normalization and scale can be set via keyword 
+		The attributes normalization and rate can be set via keyword 
 		arguments. 
 
 	Attributes 
 	----------
 	normalization : float [default : 1] 
 		The value of the exponential at x = 0 
-	scale : float [default : 1] 
+	rate : float [default : 1] 
 		The e-folding length in units of the x-coordinate. This is an 
 		exponential growth function if this value is positive, and a decay 
 		function if negative. 
 	""" 
 
-	def __init__(self, normalization = 1, scale = 1): 
+	def __init__(self, normalization = 1, rate = 1): 
 		self.normalization = normalization 
-		self.scale = scale 
+		self.rate = rate 
 
 	def __call__(self, x): 
-		return self.normalization * np.exp(x / self.scale) 
+		return self.normalization * np.exp(x / self.rate) 
+
+	def __getitem__(self, key): 
+		if key == "normalization": 
+			return self._normalization 
+		elif key == "rate": 
+			return self._rate 
+		else: 
+			raise KeyError(key) 
+
+	def __setitem__(self, key, value): 
+		# call the setter functions for error handling 
+		if key == "normalization": 
+			self.normalization = value 
+		elif key == "rate": 
+			self.rate = value 
+		else: 
+			raise KeyError(key) 
 
 	def __repr__(self): 
-		return "%.2fe^(x/%.2f)" % (self.normalization, self.scale) 
+		return "%.2fe^(x/%.2f)" % (self.normalization, self.rate) 
 
 	def __str__(self): 
 		return self.__repr__() 
@@ -62,7 +79,7 @@ class exponential:
 number. Got: %s""" % (type(value))) 
 
 	@property 
-	def scale(self): 
+	def rate(self): 
 		r""" 
 		Type : float 
 
@@ -70,13 +87,13 @@ number. Got: %s""" % (type(value)))
 		exponential growth function if this value is positive, and a decay 
 		function if negative. 
 		""" 
-		return self._scale 
+		return self._rate 
 
-	@scale.setter 
-	def scale(self, value): 
+	@rate.setter 
+	def rate(self, value): 
 		if isinstance(value, numbers.Number): 
-			self._scale = value 
+			self._rate = value 
 		else: 
-			raise TypeError("""Attribute 'scale' must be a real number. \
+			raise TypeError("""Attribute 'rate' must be a real number. \
 Got: %s""" % (type(value))) 
 

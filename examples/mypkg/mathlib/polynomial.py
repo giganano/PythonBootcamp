@@ -33,7 +33,9 @@ class polynomial:
 		self.coeffs = coeffs 
 
 	def __getitem__(self, index): 
-		if isinstance(index, numbers.Number) and index % 1 == 0: 
+		if isinstance(index, int): 
+			# Don't need any more error handling - self._coeffs is a numpy 
+			# array and will raise errors for us 
 			return self._coeffs[index] 
 		else: 
 			raise IndexError("Index must be an integer.") 
@@ -44,6 +46,19 @@ class polynomial:
 			result += x**i * self._coeffs[i] 
 		return result 
 
+	def __setitem__(self, index, value): 
+		if isinstance(index, int): 
+			if 0 <= index <= self.order: 
+				if isinstance(value, numbers.Number): 
+					self._coeffs[index] = value 
+				else: 
+					raise TypeError("Must be a numerical value. Got: %s" % (
+						type(value))) 
+			else: 
+				raise IndexError("Index out of bounds.") 
+		else: 
+			raise IndexError("Must be an integer. Got: %s" % (type(index))) 
+
 	def __repr__(self): 
 		rep = "" 
 		for i in range(self.order + 1): 
@@ -51,7 +66,7 @@ class polynomial:
 				if self._coeffs[i] > 0: 
 					rep += "+ %.2fx^%d " % (self._coeffs[i], i) 
 				elif self._coeffs[i] < 0: 
-					rep += "- %.2fx^%d " % (self._coeffs[i], i) 
+					rep += "- %.2fx^%d " % (-self._coeffs[i], i) 
 				else: 
 					# don't print if the coefficient is zero 
 					pass 
@@ -59,7 +74,7 @@ class polynomial:
 				if self._coeffs[i] > 0: 
 					rep += "%.2f " % (self._coeffs[i]) 
 				elif self._coeffs[i] < 0: 
-					rep += "-%.2f " % (self._coeffs[i]) 
+					rep += "-%.2f " % (-self._coeffs[i]) 
 				else: 
 					# don't print if the coefficient is zero 
 					pass 
@@ -67,6 +82,45 @@ class polynomial:
 
 	def __str__(self): 
 		return self.__repr__() 
+
+	def __pos__(self): 
+		return self 
+
+	def __neg__(self): 
+		return polynomial([-i for i in self._coeffs]) 
+
+	def __add__(self, other): 
+		if isinstance(other, polynomial): 
+			new_coeffs = (max(other.order, self.order) + 1) * [0.] 
+			for i in range(len(new_coeffs)): 
+				if i <= self.order: new_coeffs[i] += self[i] 
+				if i <= other.order: new_coeffs[i] += other[i] 
+			return polynomial(new_coeffs) 
+		else: 
+			raise TypeError("Must be a polynomial object. Got: %s" % (
+				type(other))) 
+
+	def __sub__(self, other): 
+		if isinstance(other, polynomial): 
+			# The same as "return self + -other" 
+			return self.__add__(other.__neg__()) 
+		else: 
+			raise TypeError("Must be a polynomial object. Got: %s" % (
+				type(other))) 
+
+	def __eq__(self, other): 
+		if isinstance(other, polynomial): 
+			if self.order == other.order: 
+				# The numpy array does component-wise comparison here, hence 
+				# the usage of all 
+				return all(self.coeffs == other.coeffs) 
+			else: 
+				return False 
+		else: 
+			return False 
+
+	# def __ne__(self, other): 
+	# 	return not self.__eq__(other) 
 
 	@property 
 	def coeffs(self): 

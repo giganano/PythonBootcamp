@@ -90,6 +90,15 @@ list, tuple, or numpy array. Got: %s""" % (type(value)))
 		""" 
 		return self.__len__() 
 
+	@property 
+	def magnitude(self): 
+		r""" 
+		Type : float 
+
+		The magnitude (or norm) of the vector 
+		""" 
+		return np.sqrt(self.dot(self)) 
+
 	def __len__(self): 
 		r""" 
 		Determines the number of components in the vector 
@@ -136,7 +145,7 @@ list, tuple, or numpy array. Got: %s""" % (type(value)))
 			raise TypeError("""Addition only supported with other vectors. \
 Got: %s""" % (type(other))) 
 
-	# __iadd__ not necessary, __add__ takes care of this already 
+	# __radd__ not necessary, __add__ takes care of this already 
 
 	def __sub__(self, other): 
 		r""" 
@@ -154,7 +163,7 @@ Got: %s""" % (type(other)))
 			raise TypeError("""Subtraction only supported with other vectors. \
 Got: %s""" % (type(other))) 
 
-	# __isub__ not necessary, __sub__ takes care of this already 
+	# __rsub__ not necessary, __sub__ takes care of this already 
 
 	def __mul__(self, other): 
 		r""" 
@@ -174,7 +183,21 @@ Got: %s""" % (type(other)))
 			raise TypeError("""Cross product only supported with other \
 vectors. Got: %s""" % (type(other))) 
 
-	# __imul__ not necessary, __mul__ takes care of this already 
+	# __rmul__ not necessary, __mul__ takes care of this already 
+
+	def __eq__(self, other): 
+		if isinstance(other, vector): 
+			if other.dimension == self.dimension: 
+				for i in range(self.dimension): 
+					if other[i] != self[i]: return False 
+				return True 
+			else: 
+				return False 
+		else: 
+			return False 
+
+	def __ne__(self, other): 
+		return not self.__eq__(other) 
 
 	def dot(self, other): 
 		r""" 

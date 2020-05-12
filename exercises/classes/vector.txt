@@ -9,6 +9,8 @@ have all of the following:
 
 - 	A property 'dimension' which returns the number of elements in the vector 
 
+- 	A property 'magnitude' which returns the norm of the vector 
+
 - 	The ability to use the len() function on the vector to determine its 
 	dimensionality, in addition to the property mentioned above 
 
@@ -22,6 +24,9 @@ have all of the following:
 - 	Respond correctly to all of +, +=, -, -=, *, and *=. Both * and *= should 
 	return the vector cross product. 
 
+- 	Equivalence comparison (i.e. your class should be able to compare vectors 
+	with the == and != operators). 
+
 - 	A functional attribute 'dot' to evaluate the dot product with another 
 	vector. This should be called via v1.dot(v2) where v1 and v2 are vector 
 	objects. 
@@ -34,6 +39,9 @@ have all of the following:
 
 You may store the vector data internally as either a list or numpy array, but 
 the property 'vector' should always return a list. 
+
+Hint: You can use the dot product function that you'll write to calculate the 
+magnitude of a vector. 
 
 Hint: This problem becomes easier when the vector data is stored as a numpy 
 array under the hood. 

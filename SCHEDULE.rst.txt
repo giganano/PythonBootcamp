@@ -71,10 +71,11 @@ Monday, May 18, 2020
 	- Properties and setter functions 
 	- Class methods and static methods 
 	- Syntactic sugar 
+	- Emulating Numeric Types 
 
 * Exercises 
 	- Mathematical functions and their parameters as objects 
-	- Wrapping a ``list`` to make it an ``array`` 
+	- A vector from scratch 
 
 
 
@@ -82,12 +83,10 @@ Wednesday, May 20, 2020
 -----------------------
 
 * Object Oriented Programming 
-	- Emulating Numeric Types 
-	- Inheritance and composition 
+	- Inheritance and Composition 
 
 * Exercises 
 	- Making a dictionary case-insensitive 
-	- A vector from scratch 
 	- A deck of cards 
 	- Pets in python 
 
