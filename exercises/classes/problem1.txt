@@ -1,0 +1,14 @@
+
+Moderate Problem: Exponential Growth and Decay 
+
+Write a class which implements exponential growth and decay. (Hint: you don't 
+need to treat growth and decay separately here). 
+
+Correct solutions will have two two properties - "normalization" and "rate". 
+The normalization describes the value of the exponential at x = 0, and rate 
+describes the e-folding length in units of the x-coordinate. These attribute 
+should have property and setter functions with error handling. Correct 
+solutions will have a default value of 1 for both of these attributes. 
+
+Make this class callable by the value x alone (i.e. example(1) should return 
+the value of the exponential at x = 1). 

@@ -1,0 +1,14 @@
+
+Challenge Problem: A case-insensitive dictionary 
+
+Subclass the built-in type "dict" to implement a dictionary which is 
+case-insensitive. This will require overriding the inherited "__init__", 
+"__getitem__", and "__setitem__" functions. Accept only keyword arguments 
+(and an arbitrary number thereof) in your overridden __init__ function. 
+
+Correct solutions will allow assignment of non-string keys after creation of 
+a case-insensitive dictionary and retain the ability to be indexed by types 
+that aren't strings. 
+
+Hint: This can be accomplished in a small number of lines (~20 counting 
+whitespace) by simply exploiting the ".lower()" function for strings. 

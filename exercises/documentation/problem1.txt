@@ -1,5 +1,5 @@
 
-Challenge Problem: Plotting Mathematical Functions with Matplotlib 
+Moderate Problem: Plotting Mathematical Functions with Matplotlib 
 
 This is an exercise in traversing matplotlib's documentation, which can be 
 quite confusing if you're relatively new to python or inexperienced in 

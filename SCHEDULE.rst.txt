@@ -86,9 +86,9 @@ Wednesday, May 20, 2020
 	- Inheritance and Composition 
 
 * Exercises 
-	- Making a dictionary case-insensitive 
-	- A deck of cards 
+	- A case-insensitive dictionary 
 	- Pets in python 
+	- A deck of cards 
 
 
 

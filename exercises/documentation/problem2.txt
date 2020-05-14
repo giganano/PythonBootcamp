@@ -1,0 +1,41 @@
+
+Challenge Problem: Histogram with Errorbars 
+
+This is an exercise in precisely plotting histogram counts with matplotlib, 
+ensuring that a step function plotted has steps exactly at the bin edges that 
+you record counts within. This is a programming problem whose solution is 
+quite important in most of astronomy research. 
+
+Create a single matplotlib subplot, and label its x-axis "x" and its y-axis 
+"Counts". Set the x-limits to -2.5 and +2.5. 
+
+Set up an array of bin-edges to create 10 bins between -2 and +2 to record 
+counts within. (What should the length of this array be?) 
+
+Write a function which determines the bin number of a value given an array of 
+bins and the value itself as parameters. You can assume that the bins array 
+will be sorted from least to greatest, and let this function return -1 in the 
+event that the value is not within the range spanned by the bin-edges. You do 
+not need to do any error-handling for this function. Bonus: write a docstring 
+for this function. 
+
+Simulate counts in these bins by sampling a gaussian with mean 0 and standard 
+devition 1 using the numpy.random.normal function, incrementing the 
+appropriate bin number by 1 for each sampled number. 
+
+Plot a histogram of these values by calling ax.step for a subplot ax (if you 
+gave your subplot a different name, that's fine). Ensure that the horizontal 
+lines denoting the number of counts span the entire range from -2 to +2. 
+(Hint: Pay special attention to the keyword argument "where" accepted by 
+ax.step. The solution calls ax.step not once but twice). 
+
+Plot errorbars at the center of each of the bins between -2 and +2 by letting 
+each count N have an error of sqrt(N) (i.e. poisson statistics). These 
+errorbars should not have a line connecting them, and should have no 
+accompanying point - only the error bar. This must be done by calling 
+ax.errorbar for a subplot ax. 
+
+Both the line plotted by ax.step and the errorbars should be plotted in black. 
+Finally, set the y-axis lower-bound to zero, but leave the upper bound 
+unmodified, and save the figure as both a PNG and a PDF. 
+

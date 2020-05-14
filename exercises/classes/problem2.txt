@@ -1,0 +1,14 @@
+
+Challenge Problem: Sinusoids 
+
+Write a class which implements a sinusoid. 
+
+Correct solutions will have four properties - "amplitude", "frequency", 
+"phase", and "angular_frequency". These should have property and setter 
+functions with error handling. The amplitude should only allow non-negative 
+values, and the frequency should only allow positive values. The phase can 
+allow any value. Modifications to the angular_frequency property should also 
+automatically modify the frequency property, and vice versa. 
+
+Make this class callable by the value x alone (i.e. example(1) should return 
+the value of the sinusoid at x = 1). 
