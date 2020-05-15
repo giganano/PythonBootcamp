@@ -9,5 +9,5 @@ function.
 Correct solutions will inherit from the exponential object in the separate 
 file, and will exponentially decay for positive values of the property "rate". 
 
-Hint: Not counting whitespace, the provided solution to this problem is only 
-five lines. 
+Not counting whitespace, the provided solution to this problem is only 
+five lines of code. 

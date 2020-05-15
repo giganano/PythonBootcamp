@@ -1,0 +1,14 @@
+
+Moderate Problem: Pets in Python 
+
+Create a base class "pet" which you will subclass twice to create a dog and 
+a cat class. Give all pets a property "name". 
+
+Give both the cat and dog subclasses a function "play" which prints a message 
+saying that the pet is either chasing a laser pointer or playing fetch, 
+depending on if it is a dog or a cat. Give the cat a function "meow" and the 
+dog a function "bark", which also prints what the dog or cat says to the 
+console. 
+
+Correct solutions will have no __init__ function in either the dog or the 
+cat class. Why aren't these necessary? 
