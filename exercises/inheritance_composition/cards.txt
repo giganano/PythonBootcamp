@@ -37,9 +37,11 @@ this class should make use of composition by storing a list of card objects
 as internal data (i.e. a list of instances of the class in cards/card.py). 
 This class should have a property 'cards' which returns the list of card 
 objects itself, and another property 'n' which returns the number of cards in 
-the hand. This object should also be compatible with the built-in len() 
-function (that is, len(hand_of_cards) should return the same as 
-len(hand_of_cards.cards)). 
+the hand. This object must support indexing via the __getitem__ function, and 
+should also be compatible with the built-in len() function (that is, 
+len(hand_of_cards) should return the same as len(hand_of_cards.cards)). Give 
+this object a string representation which makes use of the string 
+representation of its component card objects. 
 
 Within the cards/deck.py file, you are to implement a deck of playing cards, 
 which must inherit from the hand of playing cards you implemented in 
