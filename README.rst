@@ -1,12 +1,12 @@
 
 Welcome to the Ohio State Astronomy Summer Undergrad Research Program python 
-bootcamp for summer 2020! 
+bootcamp for summer 2021! 
 
 To download these files, simply run 
 
 :: 
 
-	$ git clone https://github.com/giganano/OSUAstroSURP2020.git 
+	$ git clone https://github.com/giganano/PythonBootcamp.git 
 
 in a terminal in the directory you'd like to download them to. Slides, 
 exercises, and example scripts can be found here under their respective 
@@ -16,8 +16,8 @@ If you're participating in this bootcamp, check out the `required materials`__
 and the schedule_. 
 
 __ materials_ 
-.. _materials: https://github.com/giganano/OSUAstroSURP2020/blob/master/TOOLS.rst.txt
-.. _schedule: https://github.com/giganano/OSUAstroSURP2020/blob/master/SCHEDULE.rst.txt 
+.. _materials: https://github.com/giganano/PythonBootcamp/blob/main/TOOLS.rst.txt
+.. _schedule: https://github.com/giganano/PythonBootcamp/blob/main/SCHEDULE.rst.txt 
 
 
 The following are some extra useful resources for those learning python: 

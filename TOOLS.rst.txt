@@ -36,7 +36,7 @@ __ sublime_
 
 
 
-* A bash terminal 
+* A Unix terminal 
 	There are various forms of command-line interpreters, but they all fit into 
 	one of two categories: Unix-derived and DOS-derived. Microsoft's PowerShell 
 	is an example of a DOS-derived command line, whereas Linux operating 
@@ -47,16 +47,18 @@ __ sublime_
 	Mac OS allows users to revert to a bash default. 
 
 	If you're a Windows user, I recommend upgrading to Windows 10 version 
-	>= 18362.0 if you haven't already. Then download the `Windows Terminal`__ 
-	from the Microsoft Store, and `enable Windows Subsystem for Linux (WSL)`__. 
-	This will allow the use of Bash commands within the Windows operating 
+	>= 18362.0 if you haven't already. Then, download the `Windows Terminal`__ 
+	from the Microsoft Store, and 
+	`enable the Windows Subsystem for Linux (WSL)`__. 
+	This will allow the use of a Unix terminal within the Windows operating 
 	system; other terminal utilities in Windows use PowerShell, the DOS-derived 
 	command line with different syntax. Astronomy is dominated by Linux and Mac 
-	OS, and thus also the bash terminal. For these reasons, if you're new to 
-	the command line, I recommand focusing your efforts on learning bash rather 
-	than PowerShell syntax. It is not required that you use Bash over 
-	PowerShell, though I do not recommend using PowerShell as an astronomer if 
-	you're new to the terminal. 
+	OS, and thus also the Unix terminal. You're welcome to use PowerShell if 
+	that's what you're most comfortable with, but if you're new to the command 
+	line, I recommend focusing your efforts on learning Unix rather than 
+	PowerShell syntax. It's not required for this bootcamp that you use one or 
+	the other, though Unix is the better option for astronomers who are new to 
+	the terminal. 
 
 	If you're a Mac OS user, I recommend `iTerm2`__ over the built-in terminal 
 	application, because it allows much more customization of the user 

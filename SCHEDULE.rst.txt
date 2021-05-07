@@ -2,7 +2,7 @@
 Schedule 
 ========
 
-Monday, May 11, 2020
+Monday, May 10, 2021
 --------------------
 
 * Basics of the Bash Terminal 
@@ -21,7 +21,7 @@ Monday, May 11, 2020
 
 
 
-Wednesday, May 13, 2020 
+Wednesday, May 12, 2021 
 -----------------------
 
 * The Basics of Python and Syntax Review 
@@ -42,11 +42,11 @@ Wednesday, May 13, 2020
 
 
 
-Friday, May 15, 2020 
+Friday, May 14, 2021 
 --------------------
 
 * Python Documentation 
-	- reStructureText 
+	- reStructuredText 
 	- Standard format and contents of python documentation 
 
 * Anaconda 
@@ -64,7 +64,7 @@ Friday, May 15, 2020
 
 
 
-Monday, May 18, 2020 
+Monday, May 17, 2021 
 --------------------
 
 * Object Oriented Programming 
@@ -79,7 +79,7 @@ Monday, May 18, 2020
 
 
 
-Wednesday, May 20, 2020 
+Wednesday, May 19, 2021 
 -----------------------
 
 * Object Oriented Programming 
@@ -92,16 +92,14 @@ Wednesday, May 20, 2020
 
 
 
-Friday, May 22, 2020 
+Friday, May 21, 2021 
 --------------------
 
-* Some Basic Principles of Software Engineering 
+* Object Oriented Programming 
+	- Multiple Inheritance 
+
+* Basic Principles of Software Engineering 
 	- DRY: Don't Repeat Yourself 
 	- No ifs, ands, or buts 
-
-* Review 
-
-* GitHub (if time permits) 
-	- Version control 
-	- Organization of project code 
+	- Version Control 
 
