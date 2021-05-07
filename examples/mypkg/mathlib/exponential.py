@@ -73,7 +73,7 @@ class exponential:
 	@normalization.setter 
 	def normalization(self, value): 
 		if isinstance(value, numbers.Number): 
-			self._normalization = value 
+			self._normalization = float(value) 
 		else: 
 			raise TypeError("""Attribute 'normalization' must be a real \
 number. Got: %s""" % (type(value))) 
@@ -92,7 +92,7 @@ number. Got: %s""" % (type(value)))
 	@rate.setter 
 	def rate(self, value): 
 		if isinstance(value, numbers.Number): 
-			self._rate = value 
+			self._rate = float(value) 
 		else: 
 			raise TypeError("""Attribute 'rate' must be a real number. \
 Got: %s""" % (type(value))) 
