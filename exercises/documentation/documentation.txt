@@ -16,7 +16,9 @@ Select one of the options, place a question mark after the name of the
 function and hit enter (do not put a space after the question mark). This will 
 bring up the docstring for the object you've selected. If the docstring has 
 more lines than your terminal window can fit, you'll need to press Q to exit. 
-Alternatively, you can run "help(name of function)" to view the docstring. 
+Alternatively, you can run "help(name of function)" to view the docstring 
+(you'll need to use this option if you're running the more bare bones python 
+command line on the terminal rather than the ipython interface). 
 
 Not everything you see in the package contents is truly a part of the package; 
 some of it is imported by the package. For example numpy imports the 'sys' and 
@@ -33,15 +35,14 @@ never done matrix algebra in python before, then numpy's linear algebra
 library is probably a good place to look for functions you haven't used. This 
 can be found at 'numpy.linalg' after importing numpy. 
 
-Finally, run a google search for one of the functions you searched. Espeically 
+Finally, run a google search for one of the functions you searched. Especially 
 if you run a search for a function in one of the major anaconda libraries like 
 numpy, scipy, or matplotlib, the function you searched will probably the top 
-result. Click on it to view the HTML documentation; it is the same as the 
-docstring you saw, because it is generated from the docstring. 
-
-When reading python documentation, the same information as the HTML 
-documentation can be found in the docstrings. This may be particularly useful 
-if you don't have internet access. 
+result. Click on it to view the HTML documentation; because it is generated 
+from the docstring, it contains the same information. This isn't unique; most 
+publicly available packages procedurally generate their documentation in this 
+way. This may be particularly useful if you don't have internet access while 
+coding. 
 
 The following is a link to my personal favorite comprehensive reference on 
 reStructuredText: https://docutils.sourceforge.io/docs/user/rst/quickref.html 

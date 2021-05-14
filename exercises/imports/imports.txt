@@ -39,7 +39,7 @@ desired effect.
 If done properly, this solution requires less than 10 lines of code between 
 both the pkg/__init__.py and pkg/sequences/__init__.py files combined. 
 
-Now run "python solution" in this directory. This calculate the value of 10 
+Now run "python solution" in this directory. This calculates the value of 10 
 factorial, the sum of all natural numbers 1 through 50, prints the first 
 20 elements of the fibonacci sequence, and the first 20 prime numbers. 
 Write the pkg/__main__.py file such that "python pkg" produces the same 
