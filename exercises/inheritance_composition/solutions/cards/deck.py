@@ -41,7 +41,7 @@ class deck(hand):
 		* RuntimeError 
 			- The deck is empty 
 		""" 
-		if self.n: 
+		if self.size: 
 			random.shuffle(self._cards) 
 		else: 
 			raise RuntimeError("Deck empty, no cards left!") 
@@ -55,7 +55,7 @@ class deck(hand):
 		* RuntimeError 
 			- The deck is empty 
 		""" 
-		if self.n: 
+		if self.size: 
 			x = self.cards[0] 
 			del self.cards[0] 
 			return x 

@@ -2,7 +2,9 @@
 Challenge Problem: A case-insensitive dictionary 
 
 Subclass the built-in type "dict" to implement a dictionary which is 
-case-insensitive. This will require overriding the inherited "__init__", 
+case-insensitive (i.e. it'll respond to strings regardless of upper- or 
+lower-case letters - example["foo"] and example["FOO"] will both achieve the 
+same result). This will require overriding the inherited "__init__", 
 "__getitem__", and "__setitem__" functions. Accept only keyword arguments 
 (and an arbitrary number thereof) in your overridden __init__ function. 
 

@@ -4,10 +4,10 @@ Simple Problem: A Linear-Exponential Function
 Copy either yours or the provided solution to problem 1 under 
 exercises/classes/ to a file named "exponential.py". In the same directory but 
 in a separate file, write a class which implements a linear-exponential 
-function. 
+function (i.e. f(x) ~ xe^x as opposed to f(x) ~ e^x). 
 
 Correct solutions will inherit from the exponential object in the separate 
 file, and will exponentially decay for positive values of the property "rate". 
 
 Not counting whitespace, the provided solution to this problem is only 
-five lines of code. 
+four lines of code. 

@@ -17,7 +17,7 @@ class card:
 	Attributes 
 	----------
 	value : int 
-		The face value of the card. 1 for Ace, 11 for Jack, 12 for Queen, and 
+		The face value of the card. 14 for Ace, 11 for Jack, 12 for Queen, and 
 		13 for King. 
 	suit : str 
 		The suit of the card. 'c' for clubs, 'd' for diamonds, 'h' for hearts, 
@@ -92,11 +92,7 @@ class card:
 			raise TypeError("Must be a card. Got: %s" % (type(other))) 
 
 	def __ge__(self, other): 
-		if isinstance(other, card): 
-			return self.value >= other.value 
-		else: 
-			raise TypeError("Must be a card. Got: %s" % (type(other))) 
-
+		return self.__gt__(other) or self.__eq__(other) 
 
 	def __eq__(self, other): 
 		if isinstance(other, card): 
@@ -105,11 +101,7 @@ class card:
 			raise TypeError("Must be a card. Got: %s" % (type(other))) 
 
 	def __le__(self, other): 
-		if isinstance(other, card): 
-			return self.value <= other.value 
-		else: 
-			raise TypeError("Must be a card. Got: %s" % (type(other))) 
-
+		return self.__lt__(other) or self.__eq__(other) 
 
 	def __lt__(self, other): 
 		if isinstance(other, card): 
@@ -144,7 +136,7 @@ class card:
 
 		True if the card is a royal, False otherwise 
 		""" 
-		return self.value >= 10 or self.value == 1 
+		return self.value >= 10 
 
 	@classmethod 
 	def draw(cls, drawpile): 

@@ -5,11 +5,15 @@ This challenge problem serves as a "final exam" of sorts for this bootcamp.
 Correct solutions to this problem will make use of a combination of both 
 inheritance and composition within a miniature python package, combining most 
 of the material that is new to the target audience at the beginning. 
+While difficult, this problem does not require an exhaustive amount of code 
+when solved with the proper techniques. The included solution - counting all 
+of the comments, docstrings, and whitespace - is 478 lines. 
 
 In this exercise you will implement a standard 52-card playing card deck (we 
 will omit the jokers for simplicity). Recall that a playing card deck has four 
 suits (clubs, diamonds, hearts, and spades) of which there are thirteen cards 
-with different face values (2 through 10, Jack, Queen, King, and Ace). 
+with different face values (2 through 10 (inclusive), Jack, Queen, King, and 
+Ace). 
 
 You are to create a python package named "cards". Create the following files, 
 and fill them with code according to the instructions that follow: 
@@ -27,21 +31,21 @@ single-character string denoting which suit the card is in; 'royal' must be a
 boolean describing whether or not the card is royal (this is the 10, Jack, 
 Queen, King, and Ace). This object must have a string representation which 
 prints the rank of the card and its suit. For example, the Jack of hearts 
-should prints as "Jack of hearts" and the three of diamonds as "3 of 
+should print as "Jack of hearts" and the three of diamonds as "3 of 
 diamonds". Implement numeric comparison for <, <=, ==, !=, >=, and > between 
 cards based on their rank. Here the Ace should have high rank (that is, an 
 Ace should be considered greater than all other values). 
 
 Within the cards/hand.py file, you are to implement a hand of playing cards. 
-this class should make use of composition by storing a list of card objects 
+This class should make use of composition by storing a list of card objects 
 as internal data (i.e. a list of instances of the class in cards/card.py). 
 This class should have a property 'cards' which returns the list of card 
-objects itself, and another property 'n' which returns the number of cards in 
-the hand. This object must support indexing via the __getitem__ function, and 
-should also be compatible with the built-in len() function (that is, 
+objects itself, and another property 'size' which returns the number of cards 
+in the hand. This object must support indexing via the __getitem__ function, 
+and should also be compatible with the built-in len() function (that is, 
 len(hand_of_cards) should return the same as len(hand_of_cards.cards)). Give 
 this object a string representation which makes use of the string 
-representation of its component card objects. 
+representation of each of its component card objects. 
 
 Within the cards/deck.py file, you are to implement a deck of playing cards, 
 which must inherit from the hand of playing cards you implemented in 
@@ -56,21 +60,21 @@ Within the cards/played.py file, you are to implement a discard pile, which
 should also inherit from the hand object in cards/hand.py. This should have 
 only one function which adds a card to the discard pile. 
 
-Return to your cards/card.py file and implement a class method called "draw". 
+Return to your cards/card.py file and implement a classmethod called "draw". 
 This must take in a deck object as a parameter, and it must remove and return 
 the card at the top of the deck. 
 
 Return to your cards/hand.py file and implement three functions (two standard 
-and one class method). Taking a deck as a parameter, the function "single_draw" 
+and one classmethod). Taking a deck as a parameter, the function "single_draw" 
 should remove the card from the top of the deck and place it in the hand. The 
 function single_discard should take a discard pile object and an integer i as 
 parameters, and should remove the card at the i'th position in the hand and 
-place it in the discard pile. The "fromdeck" class method should take in a 
+place it in the discard pile. The "fromdeck" classmethod should take in a 
 deck object and an integer n, and should remove the first n cards from the 
 deck, placing them in a new hand which must be returned from this function. 
 
 Return to your cards/deck.py file and override the now-inherited fromdeck 
-method to raise a TypeError everytime it is called. Then return to your 
+classmethod to raise a TypeError everytime it is called. Then return to your 
 cards/played.py file and override both of the now-inherited functions 
 single_discard and fromdeck to raise a TypeError whenever called. 
 
@@ -83,10 +87,6 @@ cards.hand.fromdeck [classmethod] : draw a number of cards from a deck and
 	obtain a hand object containing them 
 cards.deck : the deck object 
 cards.played : the discard pile object 
-
-While difficult, this problem does not require an exhaustive amount of code 
-when solved with the proper techniques. The included solution - counting all 
-of the comments, docstrings, and whitespace - is 486 lines. 
 
 Hint: In implementing shuffling of the deck, I recommend making use of the 
 random.shuffle function in the python standard library. To remove items from 

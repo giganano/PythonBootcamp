@@ -68,7 +68,7 @@ Got: %s""" % (type(values), type(suits)))
 		return self._cards 
 
 	@property 
-	def n(self): 
+	def size(self): 
 		r""" 
 		Type : int 
 
