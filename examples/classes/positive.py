@@ -6,7 +6,7 @@ class positive(int):
 	""" 
 
 	def __new__(cls, value, *args, **kwargs): 
-		if value < 0: raise ValueError("Must be non-negative and non-zero.") 
+		if value <= 0: raise ValueError("Must be non-negative and non-zero.") 
 		return super().__new__(cls, value, *args, **kwargs) 
 
 	def __add__(self, other): 
