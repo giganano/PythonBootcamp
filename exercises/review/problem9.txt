@@ -1,0 +1,12 @@
+
+Challenge Problem: Initials
+
+Print your initials on a grid using matplotlib.pyplot.imshow. Documentation on
+this function can be found at https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html. We leave it up to the student to familiarize
+themselves with the imshow function using the documentation; if this is
+challenging, we recommend attending or watching the recording of the third
+session of this bootcamp (slides: Documentation in Python; rst.pptx).
+
+Hint: First create a matplotlib grid plot using random numbers array (10x10
+suggested). Then fix the values of the blocks where you want to print your
+initials. Use a diverse set of colors in the cmap scheme for better results.

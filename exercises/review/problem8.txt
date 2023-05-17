@@ -1,0 +1,5 @@
+
+Moderate problem: Palindromes
+
+Given a string input, determine if it is a palindrome (i.e., it is the same
+written forwards as it is backwards, neglecting whitespace characters).

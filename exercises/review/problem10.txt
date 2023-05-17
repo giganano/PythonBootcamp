@@ -1,0 +1,9 @@
+
+Moderate Problem: Integer sums
+
+Given a list of integers, find the sum of all elements occurring more than once.
+For example, the list [1, 1, 3, 4, 5, 5, 5] should evaluate to 6, because 1 and
+5 occur multiple times, and they add up to 6.
+
+Hint: First create a list of integers containing duplicate elements and then do
+a sum of all the numbers in the list.

@@ -1,0 +1,7 @@
+
+Moderate Problem: Printing digits
+
+Given a positive integer, print each of its digits separately without
+converting the number into a string.
+
+Correct solutions should work for any positive integer.
