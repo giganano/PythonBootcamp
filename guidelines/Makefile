@@ -11,4 +11,5 @@ all: guidelines.pdf
 clean:
 	@ rm -f *.aux
 	@ rm -f *.log
+	@ rm -f *.out
 	@ rm -f guidelines.pdf

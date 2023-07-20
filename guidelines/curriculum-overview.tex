@@ -4,22 +4,23 @@
 \noindent
 Each instance of this bootcamp includes six sessions that typically last
 between 90 minutes and 2 hours.
-At the beginning of each session, the chief (see
-section~\ref{sec:instructors:chief}) should remind the participants what was
-covered in the previous session (they do not need to summarize the material
-itself, but simply state what it entailed) and ask for questions on that
-material before continuing with the day’s agenda.
-Each session should have a built-in ~5-minute break as close to halfway through
-as possible while also happening at a natural stopping point between different
-topics.
-Following instruction itself, the instructors should remain in the classroom to
-answer questions and help students who may be working on the exercises.
-\par
+This section provides a brief overview of the topics covered in each session.
 The course material itself is hosted online in a GitHub repository.\footnote{
 	\url{https://github.com/giganano/PythonBootcamp.git}
 }
 Each set of slides, exercises, and example codes can be found under directories
 at the top level with the corresponding self-explanatory names.
+As a public repository, it can be cloned or viewed online by anyone.
+However, making changes to the source material (e.g., to add or make
+modifications to existing slides or exercises), requires either the current
+chief (see section~\ref{sec:instructors:chief}) or the SURP director (Dr. Wayne
+Schlingman) to add one as a collaborator to the repository.
+Though collaborative tools such as Google Slides may seem like attractive
+alternative options for hosting the material, usage of GitHub ensures that a
+significant subset of the instructors are familiar with the material covered in
+session six (see section~\ref{sec:curriculum:six} below).
+Slides, exercises, and recordings of each session from previous years can also
+be found at~\url{https://jamesjohnson.space/bootcamp}.
 
 \subsection{Session One}
 \label{sec:curriculum:one}
@@ -75,22 +76,96 @@ a python package.
 We then cover a handful of popular use cases of Anaconda within astronomy,
 material which Joy Bhattacharyya expanded in the May 2023 instance of this
 bootcamp.
+This session is accompanied by exercises intended to familiarize the
+participants with some essential tasks as researchers, such as making figures
+with matplotlib and parsing documentation.
 
 \subsection{Session Four}
 \label{sec:curriculum:four}
 \noindent
 \textit{Slides: classes.pptx}
 \par\noindent
+This session covers the first half of the object-oriented programming
+instruction.
+We begin by introducing simple data container objects, then go on to describe
+how to create functions that take parameters upon initialization and how to
+set up properties and setter functions to include error handling of property
+values.
+After briefly discussing~\textit{classmethod}s and~\textit{staticmethod}s, we
+then spend the rest of the session describing syntactic sugar (sometimes
+referred to as ``magic methods'' in this context) and emulating numeric types,
+using a generic polynomial object as the example case.
 
 \subsection{Session Five}
 \label{sec:curriculum:five}
 \noindent
 \textit{Slides: inheritance\_composition.pptx}
 \par\noindent
+This session covers the second half of the object-oriented programming
+instruction.
+The majority of the time is spent discussing inheritance as it is the one of
+these two techniques which introduces new syntax.
+We discuss subclassing built-in types (e.g.,~\textit{int} and~\textit{list})
+and finish inheritance by describing how the python data model presents itself
+when using inheritance (i.e., everything inherits from~\textit{object}).
+We conclude this session with composition, which introduces no new syntax and
+is therefore much simpler than inheritance.
+We create an object storing data on solar system bodies in an intuitive
+structure to describe the utility of composition.
 
 \subsection{Session Six}
 \label{sec:curriculum:six}
 \noindent
 \textit{Slides: basicSE.pptx, github.pptx (in that order)}
 \par\noindent
+The final session begins by covering basic principles of software engineering
+that reinforce good coding habits.
+In practice, the SURP students do not realize the usefulness of these concepts
+until later in the summer (mid/late July) when the code bases of their research
+projects become sufficiently large.
+This session then concludes with an introduction to GitHub, the terminal
+application~\textit{git}, and applications of GitHub useful to scientists.
+
+\subsection{Exercises}
+\label{sec:curriculum:exercises}
+\noindent
+Each session, except for the sixth and final one, is accompanied by a set of
+exercises for the participants.
+Their solutions to these exercises are never collected and graded as this
+bootcamp is not a graded course.
+Constructing a solution is to the benefit of each participant and can be done
+on their own time, which may not be until later in the summer when they feel
+they have a sufficient grasp of the material to try their hand at the problems.
+These exercises are available alongside the slides and example codes in the
+same GitHub repository.
+They are sorted into sub-directories by session, with solutions provided
+therein, paired as follows:
+\begin{itemize}
+
+	\item \textbf{Session 1}:~\textit{exercises/terminal}
+
+	\item \textbf{Session 2}:~\textit{exercises/review}
+
+	\item \textbf{Session 3}:~\textit{exercises/imports} and
+	\textit{exercises/documentation}
+
+	\item \textbf{Session 4}:~\textit{exercises/classes}
+
+	\item \textbf{Session 5}:~\textit{exercises/inheritance\_composition}
+
+\end{itemize}
+Links to individual exercises broken down by session can also be found at \\
+\url{https://jamesjohnson.space/bootcamp}.
+One exercise that the chief should draw the participants' attention to at the
+end of the final session is the deck of cards, located at
+\textit{exercises/inheritance\_composition/cards.txt}.
+Intended to be a ``final project'' of sorts, this programming problem is too
+extensive to be solved in one sitting.
+It requires the participants to think about their algorithms and to have a
+``plan of attack'' with an organized workflow while simultaneously bringing in
+concepts from each of the sessions leading up to this point.
+In general, successful completion of the deck of cards is an indication that
+one has a solid grasp on all of the concepts covered by this bootcamp.
+Every participant is encouraged to try their hand at it once they feel they are
+ready.
 
