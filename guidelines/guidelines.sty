@@ -1,0 +1,32 @@
+
+\ProvidesPackage{guidelines}[2023/07/07]
+\pagestyle{plain}
+\flushbottom
+
+\setcounter{secnumdepth}{3}
+\renewcommand{\thepage}{\arabic{page}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+\titleformat{\section}[block]
+	{\large\bfseries}
+	{\thesection.}{1ex}{#1}
+\titlespacing{\section}{0pt}{12pt}{0pt}
+\titleformat{\subsection}[block]
+	{\large\bfseries}
+	{\thesection.\thesubsection.}{1ex}{#1}
+\titlespacing{\subsection}{0pt}{12pt}{0pt}
+\titleformat{\subsubsection}[block]
+	{\large\bfseries}
+	{\thesection.\thesubsection.\thesubsubsection.}{1ex}{#1}
+\titlespacing{\subsubsection}{0pt}{12pt}{0pt}
+
+\makeatletter
+\renewcommand\p@subsection{%
+\thesection.\thesubsection\@gobble}
+\makeatother
+
+\makeatletter
+\renewcommand\p@subsubsection{%
+\thesection.\thesubsection.\thesubsubsection\@gobble}
+\makeatother
