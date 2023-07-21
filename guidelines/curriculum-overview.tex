@@ -4,7 +4,8 @@
 \noindent
 Each instance of this bootcamp includes six sessions that typically last
 between 90 minutes and 2 hours.
-This section provides a brief overview of the topics covered in each session.
+This section provides a brief overview of the topics covered broken down by
+session.
 The course material itself is hosted online in a GitHub repository.\footnote{
 	\url{https://github.com/giganano/PythonBootcamp.git}
 }
@@ -32,15 +33,19 @@ attendance is therefore mandatory for all instructors who are available, though
 those who are not teaching that day may leave after introductions if they so
 choose.
 \par
-This session begins by familiarizing participants with high-level details of
+This session then familiarizes participants with high-level details of
 python as a programming language.
 It draws comparisons between python and C to describe interpreted versus
-compiled languages and between python and JavaScript to describe strongly
+compiled languages and between python and JavaScript to describe strongly typed
 versus weakly typed languages.
 It then switches topics to familiarize participants with the Unix terminal,
 including aliases and environment variables.
-After slides, instructors help the participants running Windows computers set
-up the Windows Subsystem for Linux.
+After the slides are finished, instructors are to help the participants running
+Windows computers with setting up the Windows Subsystem for Linux.
+By taking care of this final step in session one, each of the students is then
+running code in a Unix environment, which both minimizes difficulty for the
+instructors and eases participants' transitions to supercomputing facilities if
+their research demands it.
 
 \subsection{Session Two}
 \label{sec:curriculum:two}
@@ -48,17 +53,18 @@ up the Windows Subsystem for Linux.
 \textit{Slides: review.pptx, fileIO.pptx (in that order)}
 \par\noindent
 The second session is a crash-course review of functional programming in
-python, including the material the participants are generally familiar with
-combined with some nuance thereof.
-This review includes the built-in data types (e.g., int, float, list, tuple),
-loops, conditional statements, and functions.
-It includes the common mistake made by junior programmers that lists and arrays
-are not the same thing.
+python, including the material the participants are generally familiar with,
+but with some additional nuance thereof.
+This review includes the built-in data types (e.g.,~\textit{int},
+\textit{float},~\textit{list},~\textit{tuple}), loops, conditional statements,
+and functions.
+It includes the common mistake made by junior programmers that~\textit{list}s
+and NumPy~\textit{array}s are not the same thing.
 It then covers exception handling, which is less commonly known by the
 participants at the beginning.
 In the May 2022 instance of this bootcamp, we added coverage of the new
 match-case syntax introduced in python 3.10, which implements pattern-matching
-features.
+algorithms.
 This session concludes by describing how to read and write files without NumPy.
 
 \subsection{Session Three}
@@ -69,13 +75,13 @@ This session concludes by describing how to read and write files without NumPy.
 \par\noindent
 This session concludes functional programming by covering multi-file programs
 and popular third-party libraries available through Anaconda.
-We begin by covering import statements and what python itself does behind the
-scenes when code is imported.
+We begin by covering~\textit{import} statements and what python itself does
+behind the scenes when code is~\textit{import}ed.
 We then use this as a base for describing how to set up the basic structure of
-a python package.
+a python package (i.e., the~\textit{\_\_init\_\_.py} file).
 We then cover a handful of popular use cases of Anaconda within astronomy,
-material which Joy Bhattacharyya expanded in the May 2023 instance of this
-bootcamp.
+material which Joy Bhattacharyya substantially expanded in the May 2023
+instance of this bootcamp.
 This session is accompanied by exercises intended to familiarize the
 participants with some essential tasks as researchers, such as making figures
 with matplotlib and parsing documentation.
@@ -87,27 +93,30 @@ with matplotlib and parsing documentation.
 \par\noindent
 This session covers the first half of the object-oriented programming
 instruction.
-We begin by introducing simple data container objects, then go on to describe
-how to create functions that take parameters upon initialization and how to
-set up properties and setter functions to include error handling of property
-values.
+We begin by introducing simple data container objects, after which we describe
+how to implement objects that take parameters upon initialization as well as
+property and setter functions to implement error handling of object attributes.
 After briefly discussing~\textit{classmethod}s and~\textit{staticmethod}s, we
-then spend the rest of the session describing syntactic sugar (sometimes
-referred to as ``magic methods'' in this context) and emulating numeric types,
-using a generic polynomial object as the example case.
+then spend the rest of this session describing syntactic sugar (sometimes
+referred to as ``magic methods'' in this context) and emulating numeric types
+(i.e., making the object respond to the, e.g.,~\textit{+} and~\textit{-}
+operators).
+We walk the participants through code implementing generic polynomial functions
+as an example of one such object, and their primary exercise from this material
+is to implement a generic vector object.
 
 \subsection{Session Five}
 \label{sec:curriculum:five}
 \noindent
 \textit{Slides: inheritance\_composition.pptx}
 \par\noindent
-This session covers the second half of the object-oriented programming
-instruction.
+This session covers inheritance and composition, the second half of the
+object-oriented programming instruction.
 The majority of the time is spent discussing inheritance as it is the one of
 these two techniques which introduces new syntax.
-We discuss subclassing built-in types (e.g.,~\textit{int} and~\textit{list})
-and finish inheritance by describing how the python data model presents itself
-when using inheritance (i.e., everything inherits from~\textit{object}).
+We discuss subclassing both user-implemented and built-in types before
+describing how the python data model presents itself when using inheritance
+(i.e., everything inherits from~\textit{object}).
 We conclude this session with composition, which introduces no new syntax and
 is therefore much simpler than inheritance.
 We create an object storing data on solar system bodies in an intuitive
@@ -118,28 +127,29 @@ structure to describe the utility of composition.
 \noindent
 \textit{Slides: basicSE.pptx, github.pptx (in that order)}
 \par\noindent
-The final session begins by covering basic principles of software engineering
-that reinforce good coding habits.
+The final session begins by covering some basic principles of software
+engineering that reinforce good coding habits.
 In practice, the SURP students do not realize the usefulness of these concepts
 until later in the summer (mid/late July) when the code bases of their research
 projects become sufficiently large.
-This session then concludes with an introduction to GitHub, the terminal
-application~\textit{git}, and applications of GitHub useful to scientists.
+This session then concludes with an introduction to GitHub, applications
+thereof that are useful to scientists, and the terminal
+application~\textit{git}.
 
 \subsection{Exercises}
 \label{sec:curriculum:exercises}
 \noindent
-Each session, except for the sixth and final one, is accompanied by a set of
-exercises for the participants.
-Their solutions to these exercises are never collected and graded as this
-bootcamp is not a graded course.
+Each session, except for the sixth, is accompanied by a set of exercises for
+the participants.
+Their work is never collected by the instructors as this bootcamp is not a
+graded course.
 Constructing a solution is to the benefit of each participant and can be done
 on their own time, which may not be until later in the summer when they feel
 they have a sufficient grasp of the material to try their hand at the problems.
 These exercises are available alongside the slides and example codes in the
 same GitHub repository.
-They are sorted into sub-directories by session, with solutions provided
-therein, paired as follows:
+They are sorted into sub-directories by session, with correct solutions
+provided therein, paired as follows:
 \begin{itemize}
 
 	\item \textbf{Session 1}:~\textit{exercises/terminal}
@@ -154,11 +164,11 @@ therein, paired as follows:
 	\item \textbf{Session 5}:~\textit{exercises/inheritance\_composition}
 
 \end{itemize}
-Links to individual exercises broken down by session can also be found at \\
-\url{https://jamesjohnson.space/bootcamp}.
-One exercise that the chief should draw the participants' attention to at the
-end of the final session is the deck of cards, located at
-\textit{exercises/inheritance\_composition/cards.txt}.
+Links to individual exercises and solutions broken down by session can also be
+found at \\ \url{https://jamesjohnson.space/bootcamp}.
+One exercise that the chief (see section~\ref{sec:instructors:chief}) should
+draw the participants' attention to at the end of session five is the deck
+of cards, located at~\textit{exercises/inheritance\_composition/cards.txt}.
 Intended to be a ``final project'' of sorts, this programming problem is too
 extensive to be solved in one sitting.
 It requires the participants to think about their algorithms and to have a
